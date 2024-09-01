@@ -16,10 +16,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Run my Action
-        id: run-action
-        uses: actions/javascript-action@v1
-
       - name: Install dependencies
         run: npm install
 
@@ -28,6 +24,5 @@ jobs:
 
       - name: Run lint
         run: npm run lint
-
-      - name: Hello from Hexlet
-        uses: hexlet-components/hello-from-hexlet-action@v1
+        
+      - uses: hexlet-components/hello-from-hexlet-action@v1
