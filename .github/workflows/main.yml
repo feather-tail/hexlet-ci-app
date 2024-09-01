@@ -25,4 +25,6 @@ jobs:
       - name: Run lint
         run: npm run lint
         
-      - uses: hexlet-components/hello-from-hexlet-action@v1
+      - uses: actions/hello-world-javascript-action@main
+        with:
+          who-to-greet: 'Ilya' 
